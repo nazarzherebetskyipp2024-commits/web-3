@@ -1,0 +1,153 @@
+/* ------------------------------------------------------------------- */
+/* Загальні стилі та фон (ЗМІНЕНО) */
+/* ------------------------------------------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Тепер фон всієї сторінки світло-фіолетовий */
+    background-color: #EAEAF4; 
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7; /* Збільшення інтервалу для читабельності */
+    font-size: 1.1em; /* Збільшення базового шрифту */
+}
+
+/* Видаляємо псевдоелементи, оскільки фон встановлений на body */
+
+/* ------------------------------------------------------------------- */
+/* Контейнер для центрування контенту (БІЛА ОБЛАСТЬ) */
+/* ------------------------------------------------------------------- */
+body > header,
+body > .section,
+body > table,
+body > footer {
+    max-width: 1280px; 
+    margin: 0 auto;
+    padding: 30px 50px; /* Збільшення внутрішніх відступів */
+    background-color: #FFFFFF; /* Центр залишається білим */
+    position: relative; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тінь для виділення білого блоку */
+}
+
+/* ------------------------------------------------------------------- */
+/* Стилі для заголовків та елементів (ЗБІЛЬШЕННЯ ШРИФТУ) */
+/* ------------------------------------------------------------------- */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3.0em; /* Збільшення */
+    text-align: center;
+    border-bottom: 2px solid #79B4B7; 
+    padding-bottom: 15px; 
+}
+
+h2 {
+    font-size: 2.2em; /* Збільшення */
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 1.7em; /* Збільшення */
+    color: #79B4B7; 
+    border-left: 5px solid #79B4B7;
+    padding-left: 15px; 
+    margin-bottom: 20px;
+}
+
+/* Стиль для посилань */
+a {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #79B4B7;
+}
+
+/* Стиль для загальних секцій */
+.section {
+    padding: 30px; 
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+}
+
+/* Стилі для основної секції (фото + опис) */
+.main-info {
+    display: flex;
+    gap: 30px; 
+    align-items: flex-start;
+}
+
+.image-gallery {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 3px solid #79B4B7; 
+    display: block;
+}
+
+.description {
+    flex: 2; 
+}
+
+/* ------------------------------------------------------------------- */
+/* Стилі для таблиці (ХАРАКТЕРИСТИКИ) (ЗМІНЕНО ДЛЯ ВИДІЛЕННЯ) */
+/* ------------------------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 15px 20px; /* Збільшення відступів */
+    font-size: 1.1em; /* Збільшення шрифту в комірках */
+    text-align: left;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+th {
+    background-color: #79B4B7;
+    color: white;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+/* Виділення значень характеристик (правого стовпця) */
+td:nth-child(2) {
+    font-weight: 700;
+    color: #333333; 
+    font-size: 1.2em; /* Додаткове збільшення значення */
+}
+
+/* Контрастні рядки (через один) */
+tbody tr:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #AAAAAA;
+    padding: 15px 0;
+    margin-top: 30px;
+    border-top: 1px solid #DDDDDD;
+}
